@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=kutamba
+Exec=dev.n3shemmy3.Kutamba
+Icon=dev.n3shemmy3.Kutamba
+Terminal=false
+Type=Application
+Categories=GTK;
+StartupNotify=true

@@ -1,0 +1,6 @@
+data/dev.n3shemmy3.Kutamba.desktop.in
+data/dev.n3shemmy3.Kutamba.appdata.xml.in
+data/dev.n3shemmy3.Kutamba.gschema.xml
+src/main.js
+src/window.js
+src/window.ui

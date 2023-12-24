@@ -1,0 +1,4 @@
+[Application]
+name=dev.n3shemmy3.Kutamba
+runtime=org.gnome.Sdk/x86_64/45
+sdk=org.gnome.Sdk/x86_64/45
