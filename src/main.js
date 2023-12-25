@@ -23,7 +23,7 @@ import Gio from 'gi://Gio';
 import Gtk from 'gi://Gtk?version=4.0';
 import Adw from 'gi://Adw?version=1';
 
-import { KutambaWindow } from './window.js';
+import { KutambaWindow } from './app/window.js';
 
 pkg.initGettext();
 pkg.initFormat();
@@ -31,16 +31,16 @@ pkg.initFormat();
 export const KutambaApplication = GObject.registerClass(
     class KutambaApplication extends Adw.Application {
         constructor() {
-            super({application_id: 'dev.n3shemmy3.Kutamba', flags: Gio.ApplicationFlags.DEFAULT_FLAGS});
+            super({ application_id: 'dev.n3shemmy3.Kutamba', flags: Gio.ApplicationFlags.DEFAULT_FLAGS });
 
-            const quit_action = new Gio.SimpleAction({name: 'quit'});
-                quit_action.connect('activate', action => {
+            const quit_action = new Gio.SimpleAction({ name: 'quit' });
+            quit_action.connect('activate', action => {
                 this.quit();
             });
             this.add_action(quit_action);
             this.set_accels_for_action('app.quit', ['<primary>q']);
 
-            const show_about_action = new Gio.SimpleAction({name: 'about'});
+            const show_about_action = new Gio.SimpleAction({ name: 'about' });
             show_about_action.connect('activate', action => {
                 let aboutParams = {
                     transient_for: this.active_window,
@@ -60,7 +60,7 @@ export const KutambaApplication = GObject.registerClass(
         }
 
         vfunc_activate() {
-            let {active_window} = this;
+            let { active_window } = this;
 
             if (!active_window)
                 active_window = new KutambaWindow(this);

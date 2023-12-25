@@ -2,6 +2,7 @@
 <gresources>
   <gresource prefix="/dev/n3shemmy3/Kutamba/js">
     <file>main.js</file>
-    <file>window.js</file>
+    <file>app/window.js</file>
   </gresource>
+
 </gresources>

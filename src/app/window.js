@@ -24,11 +24,12 @@ import Adw from 'gi://Adw';
 
 export const KutambaWindow = GObject.registerClass({
     GTypeName: 'KutambaWindow',
-    Template: 'resource:///dev/n3shemmy3/Kutamba/window.ui',
+    Template: 'resource:///dev/n3shemmy3/Kutamba/ui/window.ui',
     InternalChildren: ['label'],
 }, class KutambaWindow extends Adw.ApplicationWindow {
     constructor(application) {
         super({ application });
+
     }
 });
 

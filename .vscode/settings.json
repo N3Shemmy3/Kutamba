@@ -6,5 +6,6 @@
     },
     "mesonbuild.configureOnOpen": false,
     "mesonbuild.buildFolder": "_build",
-    "mesonbuild.mesonPath": "${workspaceFolder}/.flatpak/meson.sh"
+    "mesonbuild.mesonPath": "${workspaceFolder}/.flatpak/meson.sh",
+    "C_Cpp.default.compileCommands": "/home/n3shemmy3/Projects/Gnome/kutamba/_build/compile_commands.json"
 }
